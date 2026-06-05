@@ -52,28 +52,3 @@ MDN/
 ├── cla/            # 병변 분류 — bulging / endplate / narrowing
 └── Discprogram/    # 데스크톱 앱 (PyQt5 GUI · 파이프라인 · 3D 렌더 · DICOM 변환)
 ```
-
----
-
-## 실행 방법
-
-```bash
-pip install torch torchvision segmentation_models_pytorch timm albumentations \
-            SimpleITK pydicom numpy pandas scipy scikit-learn scikit-image \
-            pyvista pyvistaqt PyQt5 matplotlib tqdm
-
-cd Discprogram
-python app_desktop.py
-```
-
-> Windows 10/11 · Python 3.10+ (GPU 권장). 단독 실행형 `.exe`로 빌드하면 Python 설치 없이 바로 실행됩니다.
-
----
-
-## 데이터셋
-
-[SPIDER](https://spider.grand-challenge.org/) — 척추 T1·T2 MRI와 분할 마스크, 방사선학적 등급 데이터를 사용합니다.
-
----
-
-> ⚠️ 본 시스템은 연구·학습 목적의 **진단 보조 도구**이며, 실제 임상 진단을 대체하지 않습니다.
